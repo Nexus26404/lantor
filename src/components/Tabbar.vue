@@ -20,10 +20,7 @@
 
 <script>
     export default {
-        name:'Tabbar',
-        props: [
-            'title'
-        ]
+        name:'Tabbar'
     }
 </script>
 

@@ -1,18 +1,23 @@
 <template>
-    <tabbar :title="msg"></tabbar>
+    <div>
+        <tabbar></tabbar>
+        <banner :picture="picSrc"></banner>
+    </div>
 </template>
 
 <script>
-    import Tabbar from './components/Tabbar.vue'
+    import Tabbar from '@/components/Tabbar.vue'
+    import Banner from '@/components/Banner.vue'
 
     export default {
-        name:'',
+        name:'App',
         components: {
-            Tabbar
+            Tabbar,
+            Banner
         },
         data(){
             return {
-                msg: 'Hao a you'
+                picSrc: '@/assets/logo.png'
             }
         }
     }
