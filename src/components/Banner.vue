@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg">
         <img :src="picture">
     </div>
 </template>
@@ -14,5 +14,4 @@
 </script>
 
 <style scoped>
-
 </style>
