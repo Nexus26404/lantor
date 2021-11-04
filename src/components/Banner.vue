@@ -1,6 +1,6 @@
 <template>
-    <div class="bg">
-        <img :src="picture">
+    <div class="bg" :style="{ background: 'url(' + picture + ') no-repeat center top', backgroundSize: 'cover' }">
+        <!-- <img :src="picture"> -->
     </div>
 </template>
 
@@ -16,8 +16,8 @@
 <style lang="less" scoped>
     .bg {
         width: 100%;
-        // height: 45vh;
-        // overflow: hidden;
+        height: 45vh;
+        overflow: hidden;
         img {
             width: 100%;
         }
