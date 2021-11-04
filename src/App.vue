@@ -2,26 +2,22 @@
     <div class="container">
         <navbar :list="list" class="navbar"></navbar>
         <div class="nothing"></div>
-        <banner :picture="picSrc"></banner>
-        <category class="category"></category>
+        <index></index>
     </div>
 </template>
 
 <script>
     import Navbar from '@/components/Navbar.vue'
-    import Banner from '@/components/Banner.vue'
-    import Category from '@/components/Category.vue'
+    import Index from '@/views/Index.vue'
 
     export default {
         name:'App',
         components: {
             Navbar,
-            Banner,
-            Category
+            Index
         },
         data(){
             return {
-                picSrc: require('@/common/img/bg.jpg'),
                 list: ['课程', '问答', '专栏', '点评', '活动', '发现']
             }
         }
@@ -43,11 +39,6 @@
 
         .nothing {
             height: 56px;
-        }
-
-        .category {
-            position: relative;
-            top: -60px;
         }
     }
 </style>

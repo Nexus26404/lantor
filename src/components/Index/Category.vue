@@ -1,5 +1,5 @@
 <template>
-    <div class="m category-box">
+    <div class="category-box">
         <template v-for="item in cateList" :key="item.id">
             <category-item class="category-item" :listItem="item"></category-item>
         </template>
@@ -48,10 +48,6 @@
 </script>
 
 <style lang="less" scoped>
-    .m {
-        margin: 0 auto;
-    }
-
     .category-box {
         display: flex;
         justify-content: space-around;
