@@ -17,7 +17,7 @@
         },
         data(){
             return {
-                picSrc: '@/assets/logo.png'
+                picSrc: require('@/assets/logo.png')
             }
         }
     }
