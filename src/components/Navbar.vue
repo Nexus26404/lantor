@@ -2,12 +2,14 @@
     <div class="container">
         <div class="m">
             <ul class="leftPart">
-                <li><a href="javascript:;">Lantor微课</a></li>
+                <li class="icon"><a href="javascript:;">Lantor微课</a></li>
                 <template v-for="item in list" :key="item">
                     <li><a href="javascript:;">{{item}}</a></li>
                 </template>
             </ul>
-            <div class="centerPart"></div>
+            <div class="centerPart">
+                <i class="showTab"></i>
+            </div>
             <div class="rightPart">
                 <input type="text" placeholder="搜索关键字" class="search">
                 <button class="login">注册登陆</button>
@@ -42,8 +44,8 @@
         .m {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             height: 56px;
-            line-height: 56px;
             margin: 0 auto;
 
             .leftPart {
@@ -54,6 +56,30 @@
 
             .centerPart {
                 flex: 1;
+                display: flex;
+                justify-content: center;
+                .showTab {
+                    position: relative;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    display: none;
+                    width: 24px;
+                    height: 24px;
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        border-top: 2px solid #ccc;
+                        border-left: 2px solid #ccc;
+                        transform: translate(-50%, -50%) rotate(-45deg);
+                    }
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                }
             }
 
             .rightPart {

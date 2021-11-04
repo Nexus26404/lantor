@@ -18,9 +18,15 @@
             width: 84%;
         }
 
+        @media screen and (max-width:959px) {
+            .icon {
+                display: none;
+            }
+        }
+
         @media screen and (max-width: 767px) {
             .m {
-                width: 96%;
+                width: 88%;
             }
 
             .rightPart {
@@ -28,7 +34,17 @@
             }
 
             .centerPart {
-                display: none !important;
+                flex: 2 !important;
+            }
+
+            .showTab {
+                display: block !important;
+            }
+        }
+
+        @media screen and (max-width: 639px) {
+            .m {
+                width: 90%;
             }
         }
     </style>
@@ -38,12 +54,7 @@
 </head>
 
 <body>
-    <noscript>
-        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-                Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
 </body>
 
 </html>
