@@ -18,7 +18,7 @@
         },
         data(){
             return {
-                picSrc: require('@/assets/logo.png'),
+                picSrc: require('@/common/img/bg.jpg'),
                 list: ['课程', '问答', '专栏', '点评', '活动', '发现']
             }
         }
